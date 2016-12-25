@@ -2,12 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Главная</title>
+    <title>Каталог</title>
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
   </head>
   <body>
-  <header class="page-header">
+  <header class="page-header page-header--sub">
     <div class="page-header__wrapper">
       <div class="page-header__container">
         <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
@@ -47,129 +47,94 @@
       <li><a href="#">Распродажа</a></li>
       <li>Бесплатная доставка по России</li>
     </ul>
-    <h1>Милые штуки ручной работы для дома</h1>
+    <h1>Каталог товаров</h1>
   </header>
 
-    <section class="page-subsections">
-      <div class="page-subsections__wrapper">
-        <div class="page-subsections__interior">
-          <a href="#"><h2>Предметы интерьера</h2></a>
-        </div>
-        <div class="page-subsections__toys">
-          <a href="#"><h2>Детские игрушки</h2></a>
-        </div>
-      </div>
-    </section>
-
-    <article class="product-week">
-      <div class="product-week__wrapper">
-        <span class="product-week__subtitle">
-          Товар недели
-        </span>
-        <div class="product-week__detail">
-            <h2 class="product-week__title">
-              Вязаные корзинки
-            </h2>
-            <p class="product-week__description">
-              Экологически чистая пряжа, ручная работа. Доступна в шести расцветках, и трех размерах.
-            </p>
-            <table class="product-week__table-size">
-              <tr><td>Цвет:</td><td>«Тиффани»/серый</td></tr>
-              <tr><td>Диаметр:</td><td>25 см</td></tr>
-              <tr><td>Высота:</td><td>15 см</td></tr>
-            </table>
-            <picture>
-              <source media="(min-width: 1151px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-mobile@1x.jpg, img/triple-set-mobile@2x.jpg 2x">
-              <img src="img/triple-set-desktop@1x.jpg" srcset="img/triple-set-desktop@2x.jpg"  alt="" class="product-week_image">
-            </picture>
-            <span class="product-week__price">
-              Цена: 990 руб.
-            </span>
-            <a href="form.html" class="product-week__order make-order">Заказать</a>
-          </div>
+    <main>
+    <div class="product__wrapper">
+      <article class="product">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1151px)" srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-1-mobile@1x.jpg, img/photo-1-mobile@2x.jpg 2x">
+            <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg"  alt="" class="product__image">
+          </picture>
+        </a>
+        <div class="product--row">
+          <h2 class="product__title">Зайчик-попрыгайчик</h2>
+          <h3 class="product__description">Рост 30 см, вес 200 г</h3>
+          <span class="product__price">1 200 руб.</span>
+          <a href="form.html" class="product__icon product__icon--basket make-order">
+            <svg class="svg-visible icon-cart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="20" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+              <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+            </svg>
+          </a>
         </div>
       </article>
 
-      <section class="page-advantages">
-        <div class="page-advantages__container">
-          <h2 class="page-advantages__title">Коротко о нас:</h2>
-          <div class="page-advantages__plus">
-            <img src="img/icon-feature-1.svg" style="left: 15px;" class="page-advantages__icon" alt="">
-            <h3 class="page-advantages__text">Экологически <br> чистые материалы</h3>
-          </div>
-          <div class="page-advantages__plus">
-            <img src="img/icon-feature-2.svg" style="left: 10px;" class="page-advantages__icon" alt="">
-            <h3 class="page-advantages__text">Связано вручную с <br> любовью и умилением</h3>
-          </div>
+      <article class="product">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1151px)" srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-2-mobile@1x.jpg, img/photo-2-mobile@2x.jpg 2x">
+            <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg"  alt="" class="product__image">
+          </picture>
+        </a>
+        <div class="product--row">
+          <h2 class="product__title">Корзинка для белья</h2>
+          <h3 class="product__description">Диаметр 15 см, высота 10 см</h3>
+          <span class="product__price">690 руб.</span>
+          <a href="form.html" class="product__icon product__icon--basket make-order">
+            <svg class="svg-visible icon-cart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="20" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+              <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+            </svg>
+          </a>
+        </div>
+      </article>
 
-          <div class="page-advantages__plus">
-            <img src="img/icon-feature-3.svg" style="left: 6px;" class="page-advantages__icon" alt="">
-            <h3 class="page-advantages__text">Скандинавский стиль <br> по российской цене</h3>
-          </div>
+      <article class="product">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1151px)" srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x.jpg 2x">
+            <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg"  alt="" class="product__image">
+          </picture>
+        </a>
+        <div class="product--row">
+          <h2 class="product__title">Большая корзинка для игрушек</h2>
+          <h3 class="product__description">Диаметр 30 см, высота 30 см</h3>
+          <span class="product__price">1 500 руб.</span>
+          <a href="form.html" class="product__icon product__icon--basket make-order">
+            <svg class="svg-visible icon-cart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="20" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+              <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+    </div>
 
-          <div class="page-advantages__plus">
-            <img src="img/icon-feature-4.svg" style="top: 3px; left: 2px;" class="page-advantages__icon" alt="">
-            <h3 class="page-advantages__text">Поддержка отечественного <br> производителя</h3>
-          </div>
-
-          <div class="page-advantages__plus">
-            <img src="img/icon-feature-5.svg" style="top: 5px; left: 13px;" class="page-advantages__icon" alt="">
-            <h3 class="page-advantages__text">Увеличивает лайки <br> на фотографиях</h3>
-          </div>
-
-          <div class="page-advantages__plus">
-            <img src="img/icon-feature-6.svg" style="left: 12px;" class="page-advantages__icon" alt="">
-            <h3 class="page-advantages__text">Поставляется в <br> подарочной упаковке</h3>
+    <section class="production">
+      <div class="production__container">
+        <div class="production__video">
+          <picture>
+            <source media="(min-width: 1151px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg"  alt="" class="production__image">
+          </picture>
+        </div>
+        <div class="production__detail">
+          <img src="img/icon-video.svg" class="product__icon" alt="">
+          <span class="production__title">
+            Процесс производства
+          </span>
+          <div class="production__text">
+            <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a href="form.html" class="production__order make-order">Сделать заказ</a>
           </div>
         </div>
-    </section>
-
-    <article class="page-feedback">
-      <div class="page-feedback__wrapper">
-        <h2>Отзывы</h2>
-        <article class="page-feedback__text">
-          <p>Я  молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-          как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-          фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-          <span class="page-feedback__author-name">Анастасия Красильникова</span>
-          <span class="page-feedback__author-nick">@misssssiskras</span>
-          <div class="feedback__navs">
-            <a class="feedback__nav feedback__nav--left">
-              <svg class="svg-visible icon-left-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
-                <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
-              </svg>
-            </a>
-            <a class="feedback__nav feedback__nav--right">
-              <svg class="svg-visible icon-right-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
-                <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
-              </svg>
-            </a>
-          </div>
-        </article>
-        <a href="#" class="page-feedback__write">Написать</a>
-      </div>
-    </article>
-
-    <section class="contacts">
-      <div class="contacts__container">
-        <div class="contacts__left">
-          <h2>Контакты</h2>
-          <div class="contacts__mail">
-            <span class="contacts__mail-text">e-mail:</span>
-            <a href="#">info@mimimishkashop.ru</a>
-          </div>
-          <div class="contacts__address">
-            <span class="contacts__address-text">адрес:</span>
-            <a href="#">г. Санкт-Петербург, <br> ул. Большая Конюшенная, д. 19/8, офис 101</a>
-          </div>
-        </div>
-        <map name="contacts__map" class="contacts__map">
-          <script type="text/javascript" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=leAE7_RHECE48CjgyZOWeDiQG8AG5OqF&lang=ru_RU&sourceType=constructor&scroll=true"></script>
-        </map>
-        <a href="#" class="contacts__write">Напишите нам</a>
       </div>
     </section>
+    </main>
 
   <footer class="page-footer">
     <div class="page-footer__container">
@@ -243,7 +208,7 @@
         <button class="modal__button">Добавить</button>
       </form>
     </section>
-  <div class="modal-shadow element-invisible"></div>
+    <div class="modal-shadow element-invisible"></div>
 
   <script src="js/script.js"></script>
   </body>
