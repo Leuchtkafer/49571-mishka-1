@@ -1,0 +1,105 @@
+.page-subsections {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  height: 136px;
+  font-family: $font-open-sans-bold;
+  font-size: 0;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+.page-subsections__wrapper {
+  display: flex;
+}
+.page-subsections::after{
+  content: "";
+  height: 34px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(../img/bg-zigzag-fill.svg) repeat-x bottom;
+}
+.page-subsections__interior {
+  background: url(../img/icon-interior.svg) no-repeat $turquoise;
+  background-position: right 37px top 28px;
+}
+.page-subsections__interior:hover a, .page-subsections__toys:hover a {
+  padding-top: 25px;
+}
+.page-subsections__interior:hover {
+  background-color: #59d5bc;
+}
+.page-subsections__toys:hover {
+  background-color: #46c1ae;
+}
+.page-subsections__interior:active a {
+  color: #97e2d2;
+}
+.page-subsections__toys:active a {
+  color: #8dd5c9;
+}
+.page-subsections h2 {
+  width: 170px;
+  height: 100%;
+}
+.page-subsections a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 26px 0 30px 35px;
+  color: #ffffff;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.page-subsections__toys {
+  background: url(../img/icon-toy.svg) no-repeat $dark-turquoise;
+  background-position: right 35px top 28px;
+}
+
+.page-subsections__interior, .page-subsections__toys {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+@media (min-width: 1151px) {
+  .page-subsections__wrapper {
+    @include desktop-widths;
+  }
+  .page-subsections__interior, .page-subsections__toys {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1150px) {
+  .page-subsections__wrapper {
+    @include tablet-widths;
+    max-width: 745px;
+  }
+  .page-subsections {
+    max-width: 100%;
+  }
+  .page-subsections__interior, .page-subsections__toys {
+    width: 50%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .page-subsections__wrapper {
+    flex-wrap: wrap;
+  }
+  .page-subsections {
+    height: 205px;
+    box-sizing: border-box;
+  }
+  .page-subsections__interior, .page-subsections__toys {
+    width: 100%;
+    height: 104px;
+  }
+  .page-subsections a {
+    padding: 27px 0 30px 27px;
+    line-height: 21px;
+  }
+  .page-subsections::after {
+    display: none;
+  }
+}
+
