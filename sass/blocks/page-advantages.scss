@@ -1,0 +1,101 @@
+.page-advantages {
+  display: flex;
+  flex-wrap: wrap;
+  background: url(../img/bg-zigzag-line.svg) repeat-x top;
+}
+.page-advantages__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-advantages__title {
+  width: auto;
+  font-family: $font-open-sans-bold;
+  text-align: left;
+}
+.page-advantages__plus {
+  position: relative;
+}
+.page-advantages__icon {
+  position: absolute;
+  top: 0;
+}
+.page-advantages__text {
+  font-family: $font-open-sans-bold;
+}
+
+@media (min-width: 1151px) {
+  .page-advantages {
+    padding-top: 84px;
+  }
+  .page-advantages__container {
+    @include desktop-widths;
+    width: 813px;
+    padding-bottom: 32px;
+  }
+  .page-advantages__plus {
+    width: 48.5%;
+    height: 107px;
+    padding: 41px 1px 7px 0;
+  }
+  .page-advantages__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 49px;
+  }
+  .page-advantages__text {
+    padding-top: 10px;
+    padding-left: 6px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1150px) {
+  .page-advantages__container {
+    @include tablet-widths;
+    width: 690px;
+    padding: 66px 0 24px;
+  }
+  .page-advantages__plus {
+    width: 48.04%;
+    margin-bottom: 51px;
+    padding: 33px 1px 0 4px;
+    display: inline-block;
+  }
+  .page-advantages__title {
+    width: 100%;
+    margin-bottom: 48px;
+    padding-left: 5px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .page-advantages__text {
+    font-size: 20px;
+    padding-top: 18px;
+    padding-left: 7px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .page-advantages {
+    margin-top: 36px;
+    padding-top: 5px;
+    background-size: 120%;
+  }
+  .page-advantages__container {
+    @include mobile-widths;
+    width: 260px;
+    padding-top: 30px;
+  }
+  .page-advantages__title {
+    margin-bottom: 32px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .page-advantages__plus {
+    width: 100%;
+    padding: 30px 0 27px;
+  }
+  .page-advantages__text {
+    padding-top: 20px;
+    font-size: 17px;
+  }
+}
