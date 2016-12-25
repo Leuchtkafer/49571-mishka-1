@@ -1,0 +1,106 @@
+.page-footer {
+  background: $bg-grey;
+  text-align: center;
+}
+.page-footer__container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.page-footer__develop {
+  width: 39%;
+  text-align: right;
+  font-family: $font-open-sans-bold;
+  font-size: 18px;
+}
+.page-footer__develop--link {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  color: $font-color-black;
+  text-decoration: none;
+}
+.page-footer__develop--link:active {
+  color: #bfbfbf;
+}
+.page-footer__logo {
+  width: 43%;
+  text-align: left;
+}
+.page-footer__develop--icon {
+  display: inline-flex;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+.icon-htmlacademy {
+  padding-left: 30px;
+  fill: #63d1bb;
+}
+.icon-insta:hover, .icon-fb:hover, .icon-twitter:hover {
+  fill: #46c1ae;
+}
+.icon-insta:active, .icon-fb:active, .icon-twitter:active {
+  fill: #bde3dd;
+}
+.page-footer__develop--link:hover .icon-htmlacademy {
+  fill: #46c1ae;
+}
+.page-footer__develop--active:hover .icon-htmlacademy {
+  fill: #bde3dd;
+}
+.page-footer__develop--text {
+  display: inline-flex;
+  height: 100%;
+  margin-bottom: 11px;
+  padding-right: 26px;
+  vertical-align: middle;
+}
+.icon-htmlacademy {
+  display: inline-flex;
+  padding-right: 7px;
+}
+
+@media (min-width: 1151px) {
+  .page-footer {
+    height: 143px;
+  }
+  .page-footer__container {
+    @include desktop-widths;
+  }
+}
+@media (min-width: 768px) and (max-width: 1150px) {
+  .page-footer {
+    height: 143px;
+  }
+  .page-footer__container {
+    @include tablet-widths;
+  }
+  .page-footer__logo {
+    width: 41%;
+    padding-left: 14px;
+  }
+  .icon-htmlacademy {
+    padding-right: 13px;
+    padding-left: 34px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .page-footer {
+    height: 159px;
+  }
+  .page-footer__container {
+    height: 100%;
+    flex-wrap: wrap;
+    @include mobile-widths;
+    width: auto;
+  }
+  .page-footer__develop {
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    line-height: 18px;
+  }
+  .page-footer__logo {
+    display: none;
+  }
+}
