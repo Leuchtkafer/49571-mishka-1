@@ -1,0 +1,188 @@
+.page-feedback__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: $font-open-sans;
+  color: $font-color-grey;
+  background: url(../img/review@1x.jpg) no-repeat;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url(../img/review@2x.jpg) no-repeat;
+    background-size: 345px 100%;
+    background-position-x: 50px;
+  }
+}
+.page-feedback h2 {
+  @include title-h2;
+}
+.page-feedback__author-name {
+  display: flex;
+  color: $font-color-black;
+  font-family: $font-open-sans-bold;
+}
+.page-feedback__author-nick {
+  display: inline-flex;
+}
+.page-feedback__write {
+  @include black-white-btn;
+}
+.page-feedback__write:hover {
+  @include black-white-btn-hover;
+}
+.page-feedback__write:active {
+  @include black-white-btn-down;
+}
+.feedback__navs {
+  position: absolute;
+  right: 67px;
+  bottom: 107px;
+}
+.feedback__nav--left,.feedback__nav--right {
+  display: inline-flex;
+  margin-left: 37px;
+}
+.icon-left-arrow:hover, .icon-right-arrow:hover {
+  fill: #666666;
+}
+.icon-left-arrow:active, .icon-right-arrow:active {
+  fill: #b2b2b2;
+}
+
+@media (min-width: 1151px) {
+  .page-feedback {
+    margin-bottom: 65px;
+  }
+  .page-feedback__wrapper {
+    @include desktop-widths;
+    padding-bottom: 96px;
+  }
+  .page-feedback h2 {
+    flex-grow: 1;
+    padding: 70px 0 50px 171px;
+    font-size: 53px;
+    line-height: 57px;
+    order: 1;
+  }
+  .page-feedback__text {
+    padding-right: 105px;
+    padding-left: 174px;
+    font-size: 17px;
+    line-height: 30px;
+    order: 3;
+  }
+  .page-feedback__write {
+    width: 93px;
+    height: 17px;
+    margin-top: 79px;
+    padding: 15px 40px;
+    order: 2;
+  }
+  .page-feedback__author-name {
+    padding-top: 35px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1150px) {
+  .page-feedback {
+    @include tablet-widths;
+    margin-bottom: 61px;
+    padding-bottom: 47px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url(../img/review@2x.jpg) no-repeat;
+      background-size: 345px 100%;
+    }
+  }
+  .page-feedback__wrapper {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: none;
+    }
+  }
+  .page-feedback h2 {
+    flex-grow: 1;
+    padding: 75px 0 50px 8px;
+    font-size: 43px;
+    line-height: 50px;
+    order: 1;
+  }
+  .page-feedback__text {
+    padding-left: 11px;
+    font-size: 17px;
+    line-height: 30px;
+    order: 3;
+  }
+  .page-feedback__write {
+    height: 17px;
+    margin-top: 78px;
+    order: 2;
+    width: 92px;
+    padding: 15px 40px;
+    margin-right: 14px;
+  }
+  .page-feedback__author-name {
+    padding-top: 55px;
+  }
+  .feedback__navs {
+    bottom: 7px;
+    right: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .page-feedback {
+    @include mobile-widths;
+    width: auto;
+    padding-bottom: 50px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: none;
+    }
+  }
+  .page-feedback__wrapper {
+    background: none;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: none;
+    }
+  }
+  .page-feedback h2 {
+    padding: 24px 0 21px 7px;
+    font-size: 25px;
+  }
+  .page-feedback__text {
+    padding-left: 10px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .page-feedback__author-name {
+    margin-bottom: 3px;
+    padding-top: 27px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .page-feedback__author-nick {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .page-feedback__write {
+    width: 156px;
+    margin-top: 119px;
+    text-align: center;
+    margin-left: 11px;
+  }
+  .feedback__navs {
+    width: 100%;
+    height: 46px;
+    justify-content: space-around;
+    bottom: 92px;
+    left: 14px;
+  }
+  .feedback__nav--left,.feedback__nav--right {
+    margin-left: 0;
+    padding: 10px 35px;
+    border: 1px solid #ececec;
+  }
+  .feedback__nav--left img,.feedback__nav--right img {
+    width: 100%;
+    height: 27px;
+    padding-top: 3px;
+  }
+}
