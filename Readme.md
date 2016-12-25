@@ -1,16 +1,9 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Mariya Chernova](https://up.htmlacademy.ru/adaptive/9/user/49571).
-* Наставник: `Неизвестно`.
+* Студент: [Mariya Chernova](https://up.htmlacademy.ru/adaptive/8/user/49571).
+* Наставник: `Никита Рогатнев`.
 
 ---
-
-**Обратите внимание на файлы:**
-
-- [Specification.md](Specification.md) — техническое задание для вашего проекта. Прочтите его и следуйте требованиям.
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
-
---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package.json`._
@@ -57,5 +50,5 @@ git clone SSH-адрес_вашего_форка
 
 [travis-image]: https://travis-ci.org/htmlacademy-adaptive/49571-mishka.svg?branch=master
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/49571-mishka
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/49571-mishka/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/49571-mishka?type=dev
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/49571-mishka.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/49571-mishka
