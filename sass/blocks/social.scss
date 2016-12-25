@@ -1,0 +1,32 @@
+.social {
+  display: flex;
+  width: 190px;
+  list-style: none;
+
+  li {
+    width: 32%;
+    vertical-align: top;
+  }
+  .social li:first-child {
+    margin-right: 6px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1150px) {
+  .social {
+    width: 190px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .social {
+    width: 51%;
+    line-height: 81px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .social li {
+    width: 18%;
+  }
+}
+
